@@ -23,6 +23,7 @@ alias ls="ls --color"
 alias cd..="cd .."
 alias reloadzsh=". ~/.zshrc"
 alias cddev="cd /media/suitougreentea/Gateway/udata/dev/"
+alias sudo='sudo env PATH=$PATH'
 
 # Env value
 #PATH="~/.rbenv/bin;$PATH"
