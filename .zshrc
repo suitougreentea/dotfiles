@@ -16,7 +16,7 @@ autoload colors
 colors
 
 # Show current directory
-PROMPT="%2d>"
+PROMPT="%3d>"
 
 # Alias
 alias ls="ls --color"

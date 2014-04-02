@@ -11,17 +11,20 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim.git'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'Shougo/neocomplete.vim'
+"NeoBundle "tyru/caw.vim"
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'yonchu/accelerated-smooth-scroll'
 
 " Color
 set t_Co=256
 syntax on
-colorscheme molokai
+colorscheme hybrid
+highlight Normal ctermbg=none
 
 " Mouse
 set mouse=a
-
-filetype on
-filetype plugin indent on
 
 " KeyBinding
 nnoremap [wt] <Nop>
@@ -33,8 +36,6 @@ nnoremap <silent> [wt]k <C-w>k
 nnoremap <silent> [wt]l <C-w>l
 nnoremap <silent> [wt]s :<C-u>split<CR>
 nnoremap <silent> [wt]v :<C-u>vsplit<CR>
-
-
 nnoremap <silent> [wt]t :<C-u>tabnew<CR>
 nnoremap <silent> [wt]T :<C-u>Unite tab<CR>
 nnoremap <silent> [wt]n gt
@@ -56,9 +57,13 @@ call submode#map('winsize', 'n', '', '-', '<C-w>-')
 call submode#map('winsize', 'n', '', '+', '<C-w>+')
 
 " Indent
+filetype plugin indent on
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set autoindent
 set smartindent
 set expandtab
+
+" Line Number
+set nu
