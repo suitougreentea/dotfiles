@@ -16,6 +16,9 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'yonchu/accelerated-smooth-scroll'
+NeoBundle 'mattn/itchyny/lightline.vim'
+"NeoBundle 'kana/vim-metarw'
+"NeoBundle 'mattn/vim-metarw-gdrive'
 
 " Color
 set t_Co=256
@@ -43,6 +46,9 @@ nnoremap <silent> [wt]p gT
 nnoremap <silent> [wt]b :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap <silent> [wt]B :<C-u>Unite buffer -buffer-name=file<CR>
 
+" Alias
+command! Reload :source ~/.vimrc
+
 " submode.vim
 " http://d.hatena.ne.jp/thinca/20130131/1359567419
 " ウィンドウサイズの変更キーを簡易化する
@@ -67,3 +73,14 @@ set expandtab
 
 " Line Number
 set nu
+
+" Status
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
+set laststatus=2
