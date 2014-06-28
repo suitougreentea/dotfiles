@@ -2,9 +2,13 @@
 set nocompatible
 scriptencoding utf-8
 
+augroup once
+  autocmd!
+augroup END
+
 " NeoBundle
 if has('vim_starting')
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 call neobundle#rc(expand('~/.vim/bundle'))
 NeoBundle 'Shougo/neobundle.vim'
@@ -28,6 +32,8 @@ highlight Normal ctermbg=none
 
 " Mouse
 set mouse=a
+set nomousefocus
+set mousehide
 
 " KeyBinding
 nnoremap [wt] <Nop>
@@ -76,3 +82,36 @@ set backspace=start,eol,indent
 
 " Encoding
 set encoding=utf-8
+
+" .vimrc
+nnoremap <F5> :<C-u>e ~/.vimrc<CR>
+nnoremap <F6> :<C-u>source ~/.vimrc<CR>
+
+" Depends on environment
+if has("gui_running")
+  if has("gui_win32")
+    set guifont=Consolas:h9
+    set guifontwide=MeiryoKe_Console:h10:cSHIFTJIS
+    set linespace=0
+    set columns=140
+    set lines=50
+    set cmdheight=1
+    autocmd once FocusGained * set transparency=240
+    autocmd once FocusLost * set transparency=128
+    set guioptions-=m
+    set guioptions-=T
+    if has("kaoriya")
+      set ambiwidth=auto
+    endif
+  endif
+else
+  " if has
+  set ambiwidth=double
+  " endif
+endif
+
+" IM
+if has("multi_byte_ime") || has("xim")
+  highlight CursorIM guibg=Purple guifg=NONE
+  set iminsert=0 imsearch=0
+endif
