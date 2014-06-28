@@ -1,5 +1,6 @@
 " Vim
 set nocompatible
+scriptencoding utf-8
 
 " NeoBundle
 if has('vim_starting')
@@ -15,7 +16,9 @@ NeoBundle 'Shougo/unite.vim'
 "NeoBundle "tyru/caw.vim"
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
-NeoBundle 'yonchu/accelerated-smooth-scroll'
+" NeoBundle 'yonchu/accelerated-smooth-scroll'
+NeoBundle 'fuenor/qfixgrep'
+NeoBundle 'fuenor/qfixhowm'
 
 " Color
 set t_Co=256
@@ -67,3 +70,9 @@ set expandtab
 
 " Line Number
 set nu
+
+" Backspace
+set backspace=start,eol,indent
+
+" Encoding
+set encoding=utf-8
