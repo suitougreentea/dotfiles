@@ -99,8 +99,8 @@ set backspace=start,eol,indent
 set encoding=utf-8
 
 " .vimrc
-nnoremap <F5> :<C-u>e ~/.vimrc<CR>
-nnoremap <F6> :<C-u>source ~/.vimrc<CR>
+nnoremap <F10> :<C-u>e ~/.vimrc<CR>
+nnoremap <F11> :<C-u>source ~/.vimrc<CR>
 
 " Depends on environment
 if has("gui_running")
