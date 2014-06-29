@@ -29,5 +29,5 @@ call submode#map('winsize', 'n', '', '-', '<C-w>-')
 call submode#map('winsize', 'n', '', '+', '<C-w>+')
 
 " .vimrc
-nnoremap <F10> :<C-u>e ~/.vimrc<CR>
-nnoremap <F11> :<C-u>source ~/.vimrc<CR>
+nnoremap [wt]1 :<C-u>e ~/.vimrc<CR>
+nnoremap [wt]2 :<C-u>source ~/.vimrc<CR>
