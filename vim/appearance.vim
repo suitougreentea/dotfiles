@@ -1,8 +1,9 @@
 " Color
 set t_Co=256
 syntax on
-colorscheme hybrid
+colorscheme molokai
 highlight Normal ctermbg=none
+highlight NonText ctermbg=none 
 
 " Status
 let g:lightline = {

@@ -1,7 +1,7 @@
 " Mouse
-set mouse=a
-set nomousefocus
-set mousehide
+"set mouse=a
+"set nomousefocus
+"set mousehide
 
 " Indent
 filetype plugin indent on
@@ -26,3 +26,6 @@ if has("multi_byte_ime") || has("xim")
   highlight CursorIM guibg=Purple guifg=NONE
   set iminsert=0 imsearch=0
 endif
+
+" clipboard
+" set clipboard=unnamed

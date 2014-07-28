@@ -14,3 +14,9 @@ source $DOTFILESDIR/vim/appearance.vim
 source $DOTFILESDIR/vim/keybinding.vim
 source $DOTFILESDIR/vim/command.vim
 source $DOTFILESDIR/vim/envdependence.vim
+
+" will be separated
+let QFixHowm_FileType = 'qfix_memo'
+let QFixHowm_RecentMode = 2
+
+let g:neocomplete#enable_at_startup = 1
