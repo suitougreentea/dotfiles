@@ -15,7 +15,7 @@ if has("gui_running")
       set ambiwidth=auto
     endif
   endif
-elsI
+elseif
   " if has
   set ambiwidth=single
   " endif
