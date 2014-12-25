@@ -15,7 +15,9 @@ if has("gui_running")
       set ambiwidth=auto
     endif
   endif
-elsI
+else
+  set ttyfast
+  set lazyredraw
   " if has
   set ambiwidth=single
   " endif

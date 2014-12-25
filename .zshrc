@@ -1,6 +1,9 @@
 export DOTFILESDIR=~/dotfiles
+export ECLIPSE_HOME=/usr/share/eclipse
 
-export PATH="/home/suitougreentea/bin:/home/suitougreentea/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="./node_modules/.bin:/home/suitougreentea/.linuxbrew/bin:/usr/share/eclipse:/home/suitougreentea/bin:/home/suitougreentea/build/bin:/home/suitougreentea/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
+export MANPATH="/home/suitougreentea/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/suitougreentea/.linuxbrew/share/info:$INFOPATH"
 alias ls="ls --color"
 alias cd..="cd .."
 alias reloadzsh=". ~/.zshrc"
@@ -26,4 +29,13 @@ function install_powerline_precmd() {
   precmd_functions+=(powerline_precmd)
 }
 
+# Virtual env wrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  export WORKON_HOME=$HOME/.virtualenvs
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 install_powerline_precmd
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
