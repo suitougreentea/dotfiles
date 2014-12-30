@@ -1,5 +1,4 @@
 export DOTFILESDIR=~/dotfiles
-export ECLIPSE_HOME=/usr/share/eclipse
 
 export PATH="./node_modules/.bin:/home/suitougreentea/.linuxbrew/bin:/usr/share/eclipse:/home/suitougreentea/bin:/home/suitougreentea/build/bin:/home/suitougreentea/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 export MANPATH="/home/suitougreentea/.linuxbrew/share/man:$MANPATH"
@@ -7,7 +6,6 @@ export INFOPATH="/home/suitougreentea/.linuxbrew/share/info:$INFOPATH"
 alias ls="ls --color"
 alias cd..="cd .."
 alias reloadzsh=". ~/.zshrc"
-alias cddev="cd /media/suitougreentea/Gateway/udata/dev/"
 alias sudo='sudo env PATH=$PATH'
 # rbenv
 eval "$(rbenv init -)"
@@ -39,3 +37,10 @@ install_powerline_precmd
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+autoload -U compinit
+compinit
+
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
+byobu-launcher
