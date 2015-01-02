@@ -1,1 +1,1 @@
-xdg_menu --format fluxbox | tee menu-exec
+xdg_menu --format fluxbox | tee ~/.fluxbox/menu-exec
