@@ -14,6 +14,14 @@ alias gcb="git checkout -b"
 alias gcv="git commit -v"
 alias gbdm="git checkout master; git branch -d $(git branch --merged | grep -v master | grep -v '*')"
 
+cde() {
+  local DIR=$(ls --color=never -F ~/dev/ | grep / | peco | head -n 1)
+  if [ -n "$DIR" ] ; then
+    DIR=${DIR%/*}
+    cd ~/dev/$DIR
+  fi
+}
+
 # rbenv
 eval "$(rbenv init -)"
 
