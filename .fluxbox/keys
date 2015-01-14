@@ -143,3 +143,4 @@ Mod4 R :Reconfig
 Mod4 T :Exec gnome-terminal
 Mod4 C :Exec chromium
 Mod4 S :Exec skype
+Mod4 F :Exec nautilus
