@@ -1,7 +1,7 @@
 " Color
 set t_Co=256
 syntax on
-colorscheme molokai
+colorscheme hybrid
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none 
 

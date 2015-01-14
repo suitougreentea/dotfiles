@@ -37,7 +37,5 @@ NeoBundle 'Shougo/vimproc.vim', {
       \    },
       \ }
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'ktvoelker/sbt-vim'
 NeoBundle 'Shougo/vimshell'
-NeoBundle 'vim-sbt', {'type' : 'nosync', 'base' : '~/.vim/bundle'}
+NeoBundle 'w0ng/vim-hybrid'

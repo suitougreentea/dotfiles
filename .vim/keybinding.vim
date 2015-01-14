@@ -26,13 +26,12 @@ nnoremap [wt]2 :<C-u>source ~/.vimrc<CR>
 " VimFiler
 nnoremap [wt]3 :VimFilerExplorer -project<CR>
 
-" SBT
-nnoremap [wt]4 :VimShellInteractive sbt<CR>
-nnoremap [wt]5 :VimShellSendString run<CR>
-
 " Swap ; and :
 noremap ; :
 noremap : ;
+
+" Pattern matching - very magic
+nnoremap /  /\v
 
 " submode.vim
 " http://d.hatena.ne.jp/thinca/20130131/1359567419
