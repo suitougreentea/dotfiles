@@ -14,7 +14,7 @@ xmodmap "/home/suitougreentea/.Xmodmap"
 # wmnd &
 # wmsmixer -w &
 # idesk &
-conky -b &
+conky -b --alignment=top_right &
 ~/.fehbg &
 
 # And last but not least we start fluxbox.
