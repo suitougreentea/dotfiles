@@ -10,9 +10,12 @@ alias cd..="cd .."
 alias reloadzsh=". ~/.zshrc"
 alias sudo='sudo env PATH=$PATH'
 
-alias gcb="git checkout -b"
+alias gps="git push origin"
+alias gpl="git pull origin"
+alias gco="git checkout"
+alias gcob="git checkout -b"
 alias gcv="git commit -v"
-alias gbdm="git checkout master; git branch -d $(git branch --merged | grep -v master | grep -v '*')"
+alias gbdm="git checkout master; git branch -d \$(git branch --merged | grep -v master | grep -v '*')"
 
 cde() {
   local DIR=$(ls --color=never -F ~/dev/ | grep / | peco | head -n 1)
@@ -60,5 +63,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # pkgfile command not found suggest
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
-# Launch byobu
-byobu-launcher
+# added by travis gem
+[ -f /home/suitougreentea/.travis/travis.sh ] && source /home/suitougreentea/.travis/travis.sh
