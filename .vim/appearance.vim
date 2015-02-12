@@ -1,7 +1,7 @@
 " Color
 set t_Co=256
 syntax on
-colorscheme hybrid
+colorscheme Tomorrow-Night
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none 
 

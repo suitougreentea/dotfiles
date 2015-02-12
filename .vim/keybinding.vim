@@ -1,7 +1,11 @@
 " KeyBinding
+nnoremap s <Nop>
 nnoremap [wt] <Nop>
 nmap <Space>s [wt]
 nnoremap <silent> [wt] <Nop>
+nnoremap <silent> [wt]_ <C-w>_
+nnoremap <silent> [wt]\| <C-w>\|
+nnoremap <silent> [wt]= <C-w>=
 nnoremap <silent> [wt]h <C-w>h
 nnoremap <silent> [wt]j <C-w>j
 nnoremap <silent> [wt]k <C-w>k
@@ -10,6 +14,8 @@ nnoremap <silent> [wt]H <C-w>H
 nnoremap <silent> [wt]J <C-w>J
 nnoremap <silent> [wt]K <C-w>K
 nnoremap <silent> [wt]L <C-w>L
+nnoremap <silent> [wt]r <C-w>r
+nnoremap <silent> [wt]R <C-w>R
 nnoremap <silent> [wt]s :<C-u>split<CR>
 nnoremap <silent> [wt]v :<C-u>vsplit<CR>
 nnoremap <silent> [wt]t :<C-u>tabnew<CR>

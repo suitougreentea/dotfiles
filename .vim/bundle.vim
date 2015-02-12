@@ -9,7 +9,7 @@ call neobundle#rc(expand('~/.vim/bundle'))
 " Bundle List
 
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'suitougreentea/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim.git'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'Shougo/unite.vim'
@@ -39,3 +39,6 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'chriskempson/vim-tomorrow-theme'

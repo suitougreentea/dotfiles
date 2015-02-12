@@ -29,3 +29,5 @@ endif
 
 " clipboard
 " set clipboard=unnamed
+
+set directory=~/.vim/tmp
