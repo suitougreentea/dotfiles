@@ -67,9 +67,9 @@ Mod1 F2 :Exec fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-123 :Exec amixer sset Master,0 1+
-122 :Exec amixer sset Master,0 1-
-121 :Exec amixer sset Master,0 toggle
+123 :Exec amixer -c 0 set Master 1+
+122 :Exec amixer -c 0 set Master 1-
+121 :Exec amixer -c 0 set Master toggle
 
 # current window commands
 Mod1 F4 :Close
@@ -144,3 +144,6 @@ Mod4 T :Exec gnome-terminal
 Mod4 C :Exec chromium
 Mod4 S :Exec skype
 Mod4 F :Exec nautilus
+107 :Exec gnome-screenshot
+# Mod1 107 :Exec gnome-screenshot -w
+Mod1 Shift 107 :Exec gnome-screenshot -a
