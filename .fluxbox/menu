@@ -1,6 +1,8 @@
 [begin] (FluxBox)
 	[include] (~/.fluxbox/menu-exec)
 	[separator]
+  [exec] (Disable compton) {killall compton}
+  [exec] (Enable compton) {compton --config ~/.fluxbox/styles/Sky/compton.config}
 	[submenu] (FluxBox)
 		[workspaces] (Workspaces)
 		[submenu] (Styles)
@@ -12,4 +14,5 @@
 		[separator]
 		[exit] (Exit)
 	[end]
+  [exec] (Shutdown) {~/.fluxbox/show-shutdown-dialog.sh}
 [end]
