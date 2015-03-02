@@ -14,6 +14,8 @@ if has("gui_running")
     if has("kaoriya")
       set ambiwidth=auto
     endif
+  elseif has("gui_gtk2")
+    set guifont=Terminus-Shinonome-Powerline:h7
   endif
 else
   set ttyfast
