@@ -34,6 +34,7 @@ eval "$(rbenv init -)"
 # Completion
 autoload -U compinit
 compinit
+setopt correct_all
 
 # Powerline Shell
 function powerline_precmd() {
@@ -61,7 +62,7 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # pkgfile command not found suggest
-source /usr/share/doc/pkgfile/command-not-found.zsh
+# source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # added by travis gem
 [ -f /home/suitougreentea/.travis/travis.sh ] && source /home/suitougreentea/.travis/travis.sh
